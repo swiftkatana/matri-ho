@@ -13,7 +13,7 @@ import { ActionsModule } from './routes/actions/actions.module'
 @Module({
 	imports: [
 		MongooseModule.forRoot(
-			'mongodb+srv://SwiftKatana:YBRLVntQSyxlekeZ@swiftkatana.3gw5v.mongodb.net/mat',
+			process.env.MONGO_URI,
 			{
 				useNewUrlParser: true,
 				useCreateIndex: true,
